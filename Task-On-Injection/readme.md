@@ -26,6 +26,66 @@ The main use case implemented is an **Electricity Bill Generator**, which calcul
 - Easy-to-understand example of real-world application  
 
 ---
-## Screenshot
+
+Task-On-Injection/
+
+├── src/
+
+│ ├── main/
+
+│ │ ├── java/
+
+│ │ │ └── com/example/discountcalculator/ ← Java classes (beans & main app)
+
+│ │ └── resources/
+
+│ │ └── applicationContext.xml ← Spring XML configuration
+
+├── pom.xml ← Maven build file
+
+└── README.md ← Project documentation
+
+
+🔹 How to Run
+
+## Clone the repository:
+
+git clone https://github.com/guptaprity/Spring-Boot-Assignment.git
+
+
+# Navigate to the project directory:
+
+cd Spring-Boot-Assignment/Task-On-Injection
+
+
+# Build the project using Maven:
+
+mvn clean install
+
+
+# Run the Spring Boot application:
+
+mvn spring-boot:run
+
+
+#  Expected Output:
+
+Total Electricity Bill: 1625.0
+
+🔹 Learning Outcomes
+
+Understanding Spring IoC container and its role in dependency management
+
+Difference between Setter Injection and Constructor Injection
+
+Practical implementation of dependency injection using XML configuration
+
+Writing loosely-coupled, maintainable code
+
+🔹 References
+
+Spring Boot Official Documentation
+
+Dependency Injection in Spring – Setter & Constructor
 
 
