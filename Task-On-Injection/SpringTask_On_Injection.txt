@@ -1,0 +1,160 @@
+✅ Task 1: Weather-Based Outfit Suggester
+Scenario:
+You're building a Spring Core application that suggests what to wear based on the weather temperature. Use constructor-based injection to provide the temperature.
+
+🧩 Requirements:
+OutfitSuggester Class:
+
+int temperature: injected via constructor.
+
+Method: suggestOutfit()
+
+< 10°C → "Wear a heavy jacket"
+
+10–20°C → "Wear a sweater"
+
+> 20°C → "Wear light clothes"
+
+XML Configuration:
+Inject the temperature value using XML.
+
+Main Class:
+Load the context, get the bean, and print the suggested outfit.
+
+🎯 Learning Highlights:
+Constructor Injection with primitive values.
+
+Spring XML config + conditional logic.
+
+
+✅ Task 2: Movie Ticket Pricing Based on Age
+Scenario:
+Create a Spring Core app that calculates the ticket price based on the user’s age using constructor injection.
+
+🧩 Requirements:
+TicketPriceCalculator Class:
+
+int age: injected via constructor.
+
+Method: calculatePrice():
+
+< 12 → ₹100
+
+12–60 → ₹200
+
+> 60 → ₹150
+
+XML Configuration:
+Inject age value in XML file.
+
+Main Class:
+Load context and display ticket price.
+
+🎯 Learning Highlights:
+Use of constructor injection with XML.
+
+Simple age-based pricing strategy logic.
+
+✅ Task 3: Electricity Bill Calculator (Units-Based)
+Scenario:
+Design a Spring Core application to calculate the electricity bill based on units consumed, using constructor injection.
+
+🧩 Requirements:
+ElectricityBillCalculator Class:
+
+int units: injected via constructor.
+
+Method: calculateBill():
+
+0–100 units → ₹1.5/unit
+
+101–300 units → ₹2.5/unit
+
+> 300 units → ₹4/unit
+
+XML Configuration:
+Inject units via XML.
+
+Main Class:
+Load context, get the bean, and print the bill amount.
+
+🎯 Learning Highlights:
+Constructor-based numeric logic.
+
+Practical use-case in utilities.
+
+
+✅ Task 4: Mobile Data Usage Bill Calculator
+
+Scenario:
+A telecom company wants to calculate monthly charges based on data used (in GB).
+Use setter injection to inject data usage.
+
+Requirements
+
+Class: DataUsageCalculator
+Field: double dataUsed (in GB) — inject using setter
+
+Method: calculateCharges()
+Billing Logic:
+
+Data Range	Rate
+0–2 GB	Free
+2–10 GB	₹20 per GB
+>10 GB	₹50 per GB
+
+XML: inject dataUsed.
+
+Main: Load context, get bean, print charge.
+
+✅ Task 5: Vehicle Mileage Efficiency Evaluator
+
+Scenario:
+A transport company wants to check the mileage status of a vehicle based on fuel consumed.
+
+Requirements
+
+Class: MileageEvaluator
+Fields (setter injection):
+
+double distance (km)
+
+double fuelUsed (liters)
+
+Method: getMileageStatus()
+Logic:
+
+Calculate mileage → distance / fuelUsed
+
+Categorize:
+
+Mileage	Category
+< 10 km/l	Poor
+10–18 km/l	Average
+> 18 km/l	Excellent
+
+XML: inject distance & fuelUsed values.
+
+Main: print mileage & category.
+
+✅ Task 6: Income Tax Calculator (Simple Slab System)
+
+Scenario:
+Create a Spring Core app to calculate tax based on annual income using setter injection.
+
+Requirements
+
+Class: IncomeTaxCalculator
+Field: double annualIncome — inject using setter.
+
+Method: calculateTax()
+Logic:
+
+Income Range	Tax Rate
+0–2.5 L	No Tax
+2.5–5 L	5%
+5–10 L	20%
+>10 L	30%
+
+XML: inject the income value.
+Main: load bean & print tax amount.
