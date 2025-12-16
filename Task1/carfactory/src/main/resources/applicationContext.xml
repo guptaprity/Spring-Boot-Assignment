@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Date Bean -->
+    <bean id="currentDate" class="java.util.Date"/>
+
+    <!-- Car Bean -->
+    <bean id="car" class="com.example.carfactory.model.Car">
+        <property name="name" value="Tata Nexon"/>
+        <property name="number" value="JH01AB1234"/>
+        <property name="dateOfManufacture" value="2024-01-01"/>
+        <property name="dateOfBuying" ref="currentDate"/>
+    </bean>
+
+    <!-- Factory Bean -->
+    <bean id="factory" class="com.example.carfactory.model.Factory">
+        <property name="address" value="Ranchi, Jharkhand"/>
+        <property name="car" ref="car"/>
+    </bean>
+
+</beans>
