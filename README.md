@@ -28,5 +28,4 @@ This project is designed to showcase fundamental Spring Boot skills including:
 
 ---
 
-## 📁 Repository Structure
 
